@@ -41,9 +41,12 @@ print("Dealer's Starting hand is:", dealer, "=", sum(dealer))
 
 if sum(hand) == 21:
     is_win()
+elif sum(hand) > 21:
+    is_win()
 if sum(dealer) == 21:
     is_win()
-
+elif sum(dealer) > 21:
+    is_win()
     
 while True:
     user_input = input("Do you want to hit or stay (N/y): ").lower()
